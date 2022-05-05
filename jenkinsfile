@@ -1,0 +1,26 @@
+pipeline {
+    agent any 
+    stages {
+        stage('CheckOut') { 
+            steps {
+                echo "From jenkins file"
+                echo "CheckOut completed ...."
+            }
+        }
+        stage('Bulid') { 
+            steps {
+                echo "Bulid completed ...."
+            }
+        }
+        stage('Test') { 
+            steps {
+                echo "Test completed ...." 
+            }
+        }
+         stage('Deploy') { 
+            steps {
+                echo "Deploy completed ...." 
+            }
+         }
+    }
+}
